@@ -1,0 +1,3 @@
+galaxy: Dbig9XX2MmSvBC2
+AWX: Io0qYoaLyefQOQZLXoi2NW4xOvN6Kj28
+galaxy NG: c1d0a6ddfd9b697e682ee1a0effa0452b8f6071b

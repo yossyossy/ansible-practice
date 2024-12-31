@@ -1,0 +1,7 @@
+# local PC
+ssh -L 18080:192.168.58.2:30458 ansible@192.168.1.41
+
+# local Brouser
+http://localhost:18080
+admin
+Io0qYoaLyefQOQZLXoi2NW4xOvN6Kj28

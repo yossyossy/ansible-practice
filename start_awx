@@ -1,0 +1,29 @@
+# ansibleユーザでログインする
+minikube start --cpus='3' --memory='6g'
+
+cd /home/ansible/ansible-labs/chapter7/vagrant/awx_fedora/
+
+kubectl apply -k work/awx/stage1/
+
+# STATUS が Running になること
+kubectl get pods -n awx
+
+kubectl apply -k work/awx/stage2/
+
+# STATUS が Running になること
+kubectl get pods -n awx
+kubectl get svc -n awx
+
+# ログインURL
+minikube service awx-app-service -n awx --url
+
+# AWX adminユーザのパスワード参照
+kubectl get secret -n awx awx-app-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
+
+# local PCで実行する
+ssh -L 18080:192.168.58.2:30458 ansible@192.168.1.41
+
+# local Brouser
+http://localhost:18080
+AWX adminユーザの名前: admin
+AWX adminユーザのパスワード: Io0qYoaLyefQOQZLXoi2NW4xOvN6Kj28

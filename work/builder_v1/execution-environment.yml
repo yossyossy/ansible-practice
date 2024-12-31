@@ -1,0 +1,17 @@
+---
+version: 1
+
+build_arg_defaults:
+  EE_BASE_IMAGE: quay.io/ansible/creator-ee:latest
+  EE_BUILDER_IMAGE: quay.io/ansible/creator-ee:latest
+
+#ansible_config: ansible.cfg
+
+dependencies:
+  galaxy: requirements.yml  # Can be a file or a multiline string
+  python: requirements.txt
+  system: bindep.txt
+#   system: |
+#     rsync [platform:rpm]
+#     kubernetes-client [platform:rpm]
+

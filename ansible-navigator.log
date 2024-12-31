@@ -1,0 +1,942 @@
+2024-10-01T14:10:32.269517+00:00 CRITICAL 'ansible_navigator.actions.run_5be0._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'dd3e3aa0-0028-4f8d-8da8-be19df00aa55', 'counter': 1, 'stdout': '\x1b[0;31mERROR! the playbook: playbook.yml could not be found\x1b[0m', 'start_line': 0, 'end_line': 1, 'runner_ident': '087c5c3c-f61f-4083-8a72-81368d39f8a0', 'created': '2024-10-01T14:10:32.269264+00:00'}
+2024-10-01T14:10:32.679197+00:00 ERROR 'ansible_navigator.actions.run_5be0.write_artifact' Saving the artifact file failed, resulted in the following error: f[Errno 13] Permission denied: '/playbook-artifact-2024-10-01T14:10:32.677954+00:00.json'
+2024-11-02T02:09:40.333403+00:00 INFO 'ansible_navigator.setup_logger' New ansible-navigator instance, logging initialized
+2024-11-02T02:09:40.351785+00:00 INFO 'ansible_navigator.setup_logger' New ansible-runner instance, logging initialized
+2024-11-02T02:09:40.351884+00:00 DEBUG 'ansible_navigator.main' Jinja2==3.1.4 
+2024-11-02T02:09:40.351932+00:00 DEBUG 'ansible_navigator.main' MarkupSafe==2.1.5 
+2024-11-02T02:09:40.351981+00:00 DEBUG 'ansible_navigator.main' Parsley==1.3 
+2024-11-02T02:09:40.352024+00:00 DEBUG 'ansible_navigator.main' PySocks==1.7.1 
+2024-11-02T02:09:40.352052+00:00 DEBUG 'ansible_navigator.main' PyYAML==5.4.1 
+2024-11-02T02:09:40.352074+00:00 DEBUG 'ansible_navigator.main' Pygments==2.18.0 
+2024-11-02T02:09:40.352096+00:00 DEBUG 'ansible_navigator.main' ansible-builder==3.0.0 
+2024-11-02T02:09:40.352117+00:00 DEBUG 'ansible_navigator.main' ansible-compat==24.7.0 
+2024-11-02T02:09:40.352140+00:00 DEBUG 'ansible_navigator.main' ansible-core==2.15.12 
+2024-11-02T02:09:40.352164+00:00 DEBUG 'ansible_navigator.main' ansible-lint==6.22.2 
+2024-11-02T02:09:40.352187+00:00 DEBUG 'ansible_navigator.main' ansible-navigator==24.2.0 
+2024-11-02T02:09:40.352211+00:00 DEBUG 'ansible_navigator.main' ansible-runner==2.4.0 
+2024-11-02T02:09:40.352236+00:00 DEBUG 'ansible_navigator.main' attrs==24.2.0 /home/ansible/.local/lib/python3.9/site-packages/attrs/__init__.py
+2024-11-02T02:09:40.352270+00:00 DEBUG 'ansible_navigator.main' bindep==2.11.0 /home/ansible/.local/lib/python3.9/site-packages/bindep/__init__.py
+2024-11-02T02:09:40.352295+00:00 DEBUG 'ansible_navigator.main' black==24.8.0 /home/ansible/.local/lib/python3.9/site-packages/black/__init__.cpython-39-x86_64-linux-gnu.so
+2024-11-02T02:09:40.352316+00:00 DEBUG 'ansible_navigator.main' bracex==2.5 /home/ansible/.local/lib/python3.9/site-packages/bracex/__init__.py
+2024-11-02T02:09:40.352341+00:00 DEBUG 'ansible_navigator.main' cffi==1.17.0 /home/ansible/.local/lib/python3.9/site-packages/cffi/__init__.py
+2024-11-02T02:09:40.352363+00:00 DEBUG 'ansible_navigator.main' chardet==4.0.0 /usr/lib/python3.9/site-packages/chardet/__init__.py
+2024-11-02T02:09:40.352390+00:00 DEBUG 'ansible_navigator.main' click==8.1.7 /home/ansible/.local/lib/python3.9/site-packages/click/__init__.py
+2024-11-02T02:09:40.352428+00:00 DEBUG 'ansible_navigator.main' cockpit==311.2 /usr/lib/python3.9/site-packages/cockpit/__init__.py
+2024-11-02T02:09:40.352453+00:00 DEBUG 'ansible_navigator.main' cryptography==43.0.0 /home/ansible/.local/lib/python3.9/site-packages/cryptography/__init__.py
+2024-11-02T02:09:40.352478+00:00 DEBUG 'ansible_navigator.main' dasbus==1.4 /usr/lib/python3.9/site-packages/dasbus/__init__.py
+2024-11-02T02:09:40.352517+00:00 DEBUG 'ansible_navigator.main' dbus-python==1.2.18 
+2024-11-02T02:09:40.352566+00:00 DEBUG 'ansible_navigator.main' decorator==4.4.2 /usr/lib/python3.9/site-packages/decorator.py
+2024-11-02T02:09:40.352606+00:00 DEBUG 'ansible_navigator.main' distro==1.9.0 /home/ansible/.local/lib/python3.9/site-packages/distro/__init__.py
+2024-11-02T02:09:40.352643+00:00 DEBUG 'ansible_navigator.main' dnspython==2.7.0 
+2024-11-02T02:09:40.352690+00:00 DEBUG 'ansible_navigator.main' docutils==0.21.2 /home/ansible/.local/lib/python3.9/site-packages/docutils/__init__.py
+2024-11-02T02:09:40.352729+00:00 DEBUG 'ansible_navigator.main' file-magic==0.4.0 
+2024-11-02T02:09:40.352773+00:00 DEBUG 'ansible_navigator.main' filelock==3.15.4 /home/ansible/.local/lib/python3.9/site-packages/filelock/__init__.py
+2024-11-02T02:09:40.352823+00:00 DEBUG 'ansible_navigator.main' idna==2.10 /usr/lib/python3.9/site-packages/idna/__init__.py
+2024-11-02T02:09:40.352855+00:00 DEBUG 'ansible_navigator.main' importlib-metadata==6.2.1 
+2024-11-02T02:09:40.352884+00:00 DEBUG 'ansible_navigator.main' importlib-resources==5.0.7 
+2024-11-02T02:09:40.352910+00:00 DEBUG 'ansible_navigator.main' iniparse==0.4 /usr/lib/python3.9/site-packages/iniparse/__init__.py
+2024-11-02T02:09:40.352937+00:00 DEBUG 'ansible_navigator.main' jsonschema-specifications==2023.12.1 
+2024-11-02T02:09:40.352973+00:00 DEBUG 'ansible_navigator.main' jsonschema==4.23.0 /home/ansible/.local/lib/python3.9/site-packages/jsonschema/__init__.py
+2024-11-02T02:09:40.353012+00:00 DEBUG 'ansible_navigator.main' lockfile==0.12.2 /home/ansible/.local/lib/python3.9/site-packages/lockfile/__init__.py
+2024-11-02T02:09:40.353045+00:00 DEBUG 'ansible_navigator.main' lxml==4.6.5 /usr/lib64/python3.9/site-packages/lxml/__init__.py
+2024-11-02T02:09:40.353075+00:00 DEBUG 'ansible_navigator.main' markdown-it-py==3.0.0 
+2024-11-02T02:09:40.353103+00:00 DEBUG 'ansible_navigator.main' mdurl==0.1.2 /home/ansible/.local/lib/python3.9/site-packages/mdurl/__init__.py
+2024-11-02T02:09:40.353142+00:00 DEBUG 'ansible_navigator.main' mypy-extensions==1.0.0 
+2024-11-02T02:09:40.353178+00:00 DEBUG 'ansible_navigator.main' nftables==0.1 /usr/lib/python3.9/site-packages/nftables/__init__.py
+2024-11-02T02:09:40.353216+00:00 DEBUG 'ansible_navigator.main' onigurumacffi==1.3.0 /home/ansible/.local/lib/python3.9/site-packages/onigurumacffi.py
+2024-11-02T02:09:40.353247+00:00 DEBUG 'ansible_navigator.main' packaging==24.1 /home/ansible/.local/lib/python3.9/site-packages/packaging/__init__.py
+2024-11-02T02:09:40.353281+00:00 DEBUG 'ansible_navigator.main' pathspec==0.12.1 /home/ansible/.local/lib/python3.9/site-packages/pathspec/__init__.py
+2024-11-02T02:09:40.353314+00:00 DEBUG 'ansible_navigator.main' pbr==6.0.0 /home/ansible/.local/lib/python3.9/site-packages/pbr/__init__.py
+2024-11-02T02:09:40.353356+00:00 DEBUG 'ansible_navigator.main' perf==0.1 /usr/lib64/python3.9/site-packages/perf.cpython-39-x86_64-linux-gnu.so
+2024-11-02T02:09:40.353395+00:00 DEBUG 'ansible_navigator.main' pip==21.2.3 /usr/lib/python3.9/site-packages/pip/__init__.py
+2024-11-02T02:09:40.353423+00:00 DEBUG 'ansible_navigator.main' platformdirs==4.2.2 /home/ansible/.local/lib/python3.9/site-packages/platformdirs/__init__.py
+2024-11-02T02:09:40.353459+00:00 DEBUG 'ansible_navigator.main' ply==3.11 /usr/lib/python3.9/site-packages/ply/__init__.py
+2024-11-02T02:09:40.353488+00:00 DEBUG 'ansible_navigator.main' psutil==5.8.0 /usr/lib64/python3.9/site-packages/psutil/__init__.py
+2024-11-02T02:09:40.353517+00:00 DEBUG 'ansible_navigator.main' pycairo==1.20.1 
+2024-11-02T02:09:40.353551+00:00 DEBUG 'ansible_navigator.main' pycparser==2.22 /home/ansible/.local/lib/python3.9/site-packages/pycparser/__init__.py
+2024-11-02T02:09:40.353576+00:00 DEBUG 'ansible_navigator.main' pyinotify==0.9.6 /usr/lib/python3.9/site-packages/pyinotify.py
+2024-11-02T02:09:40.353598+00:00 DEBUG 'ansible_navigator.main' pyparsing==2.4.7 /usr/lib/python3.9/site-packages/pyparsing.py
+2024-11-02T02:09:40.353624+00:00 DEBUG 'ansible_navigator.main' python-daemon==3.0.1 
+2024-11-02T02:09:40.353671+00:00 DEBUG 'ansible_navigator.main' python-dateutil==2.8.1 
+2024-11-02T02:09:40.353698+00:00 DEBUG 'ansible_navigator.main' python-linux-procfs==0.7.3 
+2024-11-02T02:09:40.353720+00:00 DEBUG 'ansible_navigator.main' pyudev==0.22.0 /usr/lib/python3.9/site-packages/pyudev/__init__.py
+2024-11-02T02:09:40.353741+00:00 DEBUG 'ansible_navigator.main' referencing==0.35.1 /home/ansible/.local/lib/python3.9/site-packages/referencing/__init__.py
+2024-11-02T02:09:40.353762+00:00 DEBUG 'ansible_navigator.main' requests==2.25.1 /usr/lib/python3.9/site-packages/requests/__init__.py
+2024-11-02T02:09:40.353793+00:00 DEBUG 'ansible_navigator.main' requirements-parser==0.11.0 
+2024-11-02T02:09:40.353829+00:00 DEBUG 'ansible_navigator.main' resolvelib==1.0.1 /home/ansible/.local/lib/python3.9/site-packages/resolvelib/__init__.py
+2024-11-02T02:09:40.353856+00:00 DEBUG 'ansible_navigator.main' rich==13.7.1 /home/ansible/.local/lib/python3.9/site-packages/rich/__init__.py
+2024-11-02T02:09:40.353878+00:00 DEBUG 'ansible_navigator.main' rpds-py==0.20.0 
+2024-11-02T02:09:40.353899+00:00 DEBUG 'ansible_navigator.main' ruamel.yaml.clib==0.2.8 
+2024-11-02T02:09:40.353921+00:00 DEBUG 'ansible_navigator.main' ruamel.yaml==0.18.6 /home/ansible/.local/lib/python3.9/site-packages/ruamel/yaml/__init__.py
+2024-11-02T02:09:40.353955+00:00 DEBUG 'ansible_navigator.main' selinux==3.6 /usr/lib64/python3.9/site-packages/selinux/__init__.py
+2024-11-02T02:09:40.353998+00:00 DEBUG 'ansible_navigator.main' sepolicy==3.6 /usr/lib/python3.9/site-packages/sepolicy/__init__.py
+2024-11-02T02:09:40.354029+00:00 DEBUG 'ansible_navigator.main' setools==4.4.4 /usr/lib64/python3.9/site-packages/setools/__init__.py
+2024-11-02T02:09:40.354052+00:00 DEBUG 'ansible_navigator.main' setroubleshoot==3.3.32 /usr/lib/python3.9/site-packages/setroubleshoot/__init__.py
+2024-11-02T02:09:40.354073+00:00 DEBUG 'ansible_navigator.main' setuptools==72.2.0 /home/ansible/.local/lib/python3.9/site-packages/setuptools/__init__.py
+2024-11-02T02:09:40.354100+00:00 DEBUG 'ansible_navigator.main' six==1.15.0 /usr/lib/python3.9/site-packages/six.py
+2024-11-02T02:09:40.354145+00:00 DEBUG 'ansible_navigator.main' sos==4.7.1 /usr/lib/python3.9/site-packages/sos/__init__.py
+2024-11-02T02:09:40.354180+00:00 DEBUG 'ansible_navigator.main' subprocess-tee==0.4.2 
+2024-11-02T02:09:40.354211+00:00 DEBUG 'ansible_navigator.main' subscription-manager==1.29.40 
+2024-11-02T02:09:40.354233+00:00 DEBUG 'ansible_navigator.main' tomli==2.0.1 /home/ansible/.local/lib/python3.9/site-packages/tomli/__init__.py
+2024-11-02T02:09:40.354255+00:00 DEBUG 'ansible_navigator.main' types-setuptools==75.1.0.20240917 
+2024-11-02T02:09:40.354278+00:00 DEBUG 'ansible_navigator.main' typing_extensions==4.12.2 /home/ansible/.local/lib/python3.9/site-packages/typing_extensions.py
+2024-11-02T02:09:40.354316+00:00 DEBUG 'ansible_navigator.main' tzdata==2024.1 /home/ansible/.local/lib/python3.9/site-packages/tzdata/__init__.py
+2024-11-02T02:09:40.354346+00:00 DEBUG 'ansible_navigator.main' urllib3==1.26.5 /usr/lib/python3.9/site-packages/urllib3/__init__.py
+2024-11-02T02:09:40.354372+00:00 DEBUG 'ansible_navigator.main' wcmatch==9.0 /home/ansible/.local/lib/python3.9/site-packages/wcmatch/__init__.py
+2024-11-02T02:09:40.354399+00:00 DEBUG 'ansible_navigator.main' yamllint==1.35.1 /home/ansible/.local/lib/python3.9/site-packages/yamllint/__init__.py
+2024-11-02T02:09:40.354433+00:00 DEBUG 'ansible_navigator.main' zipp==3.20.0 /home/ansible/.local/lib/python3.9/site-packages/zipp/__init__.py
+2024-11-02T02:09:40.354463+00:00 DEBUG 'ansible_navigator.main' Default collection_doc_cache_path set to: /home/ansible/.cache/ansible-navigator/collection_doc_cache.db
+2024-11-02T02:09:40.354487+00:00 DEBUG 'ansible_navigator.main' EDITOR environment variable not set
+2024-11-02T02:09:40.354511+00:00 DEBUG 'ansible_navigator.main' Default editor_command set to: vi +{line_number} {filename}
+2024-11-02T02:09:40.354546+00:00 DEBUG 'ansible_navigator.main' No config file set by ANSIBLE_NAVIGATOR_CONFIG
+2024-11-02T02:09:40.354589+00:00 DEBUG 'ansible_navigator.main' Looking in /home/ansible
+2024-11-02T02:09:40.354624+00:00 DEBUG 'ansible_navigator.main' Looking for '/home/ansible/.ansible-navigator.yml', '/home/ansible/.ansible-navigator.yaml' and '/home/ansible/.ansible-navigator.json'
+2024-11-02T02:09:40.354668+00:00 DEBUG 'ansible_navigator.main' Found 0: 
+2024-11-02T02:09:40.354704+00:00 DEBUG 'ansible_navigator.main' Looking in /home/ansible/ansible-labs
+2024-11-02T02:09:40.354749+00:00 DEBUG 'ansible_navigator.main' Looking for '/home/ansible/ansible-labs/ansible-navigator.yml', '/home/ansible/ansible-labs/ansible-navigator.yaml' and '/home/ansible/ansible-labs/ansible-navigator.json'
+2024-11-02T02:09:40.354777+00:00 DEBUG 'ansible_navigator.main' Found 0: 
+2024-11-02T02:09:40.354810+00:00 DEBUG 'ansible_navigator.main' All found 0: 
+2024-11-02T02:09:40.354838+00:00 DEBUG 'ansible_navigator.main' Using: None
+2024-11-02T02:09:40.354867+00:00 DEBUG 'ansible_navigator.main' No valid settings file found, using all default values for settings.
+2024-11-02T02:09:40.354895+00:00 DEBUG 'ansible_navigator.main' Command provided: 'help'
+2024-11-02T02:09:40.354930+00:00 WARNING 'ansible_navigator.main' Configuration errors encountered, rolling back to previous configuration.
+2024-11-02T02:09:40.354964+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_artifact_dir = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.354993+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_rotate_artifacts_count = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.355015+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_timeout = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.355038+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_write_job_events = 'False' (bool/Defaults)
+2024-11-02T02:09:40.355061+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: app = 'welcome' (str/Defaults)
+2024-11-02T02:09:40.355084+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: cmdline = '['help']' (list/Command line)
+2024-11-02T02:09:40.355108+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: collection_doc_cache_path = '/home/ansible/.cache/ansible-navigator/collection_doc_cache.db' (str/Defaults)
+2024-11-02T02:09:40.355130+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: config = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.355153+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: container_engine = 'auto' (str/Defaults)
+2024-11-02T02:09:40.355174+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: container_options = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.355201+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: display_color = 'True' (bool/Defaults)
+2024-11-02T02:09:40.355225+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: editor_command = 'vi +{line_number} {filename}' (str/Defaults)
+2024-11-02T02:09:40.355252+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: editor_console = 'True' (bool/Defaults)
+2024-11-02T02:09:40.355287+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: enable_prompts = 'False' (bool/Defaults)
+2024-11-02T02:09:40.355321+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: exec_command = '/bin/bash' (str/Defaults)
+2024-11-02T02:09:40.355344+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: exec_shell = 'True' (bool/Defaults)
+2024-11-02T02:09:40.355370+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment = 'True' (bool/Defaults)
+2024-11-02T02:09:40.355405+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment_image = 'ghcr.io/ansible/creator-ee:v0.22.0' (str/Defaults)
+2024-11-02T02:09:40.355447+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment_volume_mounts = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.355481+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: format = 'yaml' (str/Defaults)
+2024-11-02T02:09:40.355509+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_builder = 'False' (bool/Defaults)
+2024-11-02T02:09:40.355540+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_config = 'False' (bool/Defaults)
+2024-11-02T02:09:40.355565+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_doc = 'False' (bool/Defaults)
+2024-11-02T02:09:40.355591+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_inventory = 'False' (bool/Defaults)
+2024-11-02T02:09:40.355621+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_playbook = 'False' (bool/Defaults)
+2024-11-02T02:09:40.355656+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: images_details = '['everything']' (list/Defaults)
+2024-11-02T02:09:40.355711+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: inventory = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.355748+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: inventory_column = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.355783+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: lint_config = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.355819+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: lintables = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.355857+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_append = 'True' (bool/Defaults)
+2024-11-02T02:09:40.355891+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_file = '/home/ansible/ansible-labs/ansible-navigator.log' (str/Defaults)
+2024-11-02T02:09:40.355923+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_level = 'warning' (str/Defaults)
+2024-11-02T02:09:40.355956+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: mode = 'interactive' (str/Defaults)
+2024-11-02T02:09:40.355998+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: osc4 = 'True' (bool/Defaults)
+2024-11-02T02:09:40.356041+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pass_environment_variable = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356087+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356118+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_enable = 'True' (bool/Defaults)
+2024-11-02T02:09:40.356148+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_replay = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356184+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_save_as = '{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json' (str/Defaults)
+2024-11-02T02:09:40.356221+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: plugin_name = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356260+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: plugin_type = 'module' (str/Defaults)
+2024-11-02T02:09:40.356305+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pull_arguments = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356333+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pull_policy = 'tag' (str/Defaults)
+2024-11-02T02:09:40.356361+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: set_environment_variable = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356395+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_effective = 'False' (bool/Defaults)
+2024-11-02T02:09:40.356434+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_sample = 'False' (bool/Defaults)
+2024-11-02T02:09:40.356469+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_schema = 'json' (str/Defaults)
+2024-11-02T02:09:40.356492+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_sources = 'False' (bool/Defaults)
+2024-11-02T02:09:40.356514+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: time_zone = 'UTC' (str/Defaults)
+2024-11-02T02:09:40.356534+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: workdir = '/home/ansible/ansible-labs' (str/Defaults)
+2024-11-02T02:09:40.356555+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_artifact_dir = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356576+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_rotate_artifacts_count = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356597+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_timeout = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356629+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_write_job_events = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356669+00:00 DEBUG 'ansible_navigator.main' After rollback: app = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356706+00:00 DEBUG 'ansible_navigator.main' After rollback: cmdline = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356742+00:00 DEBUG 'ansible_navigator.main' After rollback: collection_doc_cache_path = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356786+00:00 DEBUG 'ansible_navigator.main' After rollback: config = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356831+00:00 DEBUG 'ansible_navigator.main' After rollback: container_engine = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356866+00:00 DEBUG 'ansible_navigator.main' After rollback: container_options = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356889+00:00 DEBUG 'ansible_navigator.main' After rollback: display_color = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356911+00:00 DEBUG 'ansible_navigator.main' After rollback: editor_command = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356932+00:00 DEBUG 'ansible_navigator.main' After rollback: editor_console = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356954+00:00 DEBUG 'ansible_navigator.main' After rollback: enable_prompts = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.356975+00:00 DEBUG 'ansible_navigator.main' After rollback: exec_command = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357011+00:00 DEBUG 'ansible_navigator.main' After rollback: exec_shell = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357043+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357080+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment_image = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357105+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment_volume_mounts = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357145+00:00 DEBUG 'ansible_navigator.main' After rollback: format = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357188+00:00 DEBUG 'ansible_navigator.main' After rollback: help_builder = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357220+00:00 DEBUG 'ansible_navigator.main' After rollback: help_config = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357243+00:00 DEBUG 'ansible_navigator.main' After rollback: help_doc = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357265+00:00 DEBUG 'ansible_navigator.main' After rollback: help_inventory = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357287+00:00 DEBUG 'ansible_navigator.main' After rollback: help_playbook = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357307+00:00 DEBUG 'ansible_navigator.main' After rollback: images_details = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357331+00:00 DEBUG 'ansible_navigator.main' After rollback: inventory = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357370+00:00 DEBUG 'ansible_navigator.main' After rollback: inventory_column = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357398+00:00 DEBUG 'ansible_navigator.main' After rollback: lint_config = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357439+00:00 DEBUG 'ansible_navigator.main' After rollback: lintables = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357467+00:00 DEBUG 'ansible_navigator.main' After rollback: log_append = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357508+00:00 DEBUG 'ansible_navigator.main' After rollback: log_file = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357547+00:00 DEBUG 'ansible_navigator.main' After rollback: log_level = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357579+00:00 DEBUG 'ansible_navigator.main' After rollback: mode = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357612+00:00 DEBUG 'ansible_navigator.main' After rollback: osc4 = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357635+00:00 DEBUG 'ansible_navigator.main' After rollback: pass_environment_variable = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357656+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357710+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_enable = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357738+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_replay = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357760+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_save_as = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357791+00:00 DEBUG 'ansible_navigator.main' After rollback: plugin_name = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357827+00:00 DEBUG 'ansible_navigator.main' After rollback: plugin_type = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357861+00:00 DEBUG 'ansible_navigator.main' After rollback: pull_arguments = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357884+00:00 DEBUG 'ansible_navigator.main' After rollback: pull_policy = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357924+00:00 DEBUG 'ansible_navigator.main' After rollback: set_environment_variable = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.357967+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_effective = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.358012+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_sample = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.358057+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_schema = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.358086+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_sources = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.358109+00:00 DEBUG 'ansible_navigator.main' After rollback: time_zone = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.358131+00:00 DEBUG 'ansible_navigator.main' After rollback: workdir = 'Not set' (Constants/Not set)
+2024-11-02T02:09:40.358165+00:00 DEBUG 'ansible_navigator.main' Configuration rollback complete.
+2024-11-02T02:09:40.358201+00:00 DEBUG 'ansible_navigator.main' Collection doc cache not mounted
+2024-11-02T02:09:40.358243+00:00 WARNING 'ansible_navigator.main' Issues were found while applying the settings.
+2024-11-02T02:09:40.358277+00:00 INFO 'ansible_navigator.main' Command provided: 'help'
+2024-11-02T02:09:40.358321+00:00 ERROR 'ansible_navigator.main' argument {subcommand} --help: invalid choice: 'help' (choose from 'builder', 'collections', 'config', 'doc', 'exec', 'images', 'inventory', 'lint', 'replay', 'run', 'settings', 'welcome')
+2024-11-02T02:09:40.358361+00:00 INFO 'ansible_navigator.main' Configuration failed, using default log file location. (/home/ansible/ansible-labs/ansible-navigator.log) Log level set to debug
+2024-11-02T02:09:40.358400+00:00 INFO 'ansible_navigator.main' Review the hints and log file to see what went wrong.
+2024-11-02T02:09:52.717141+00:00 INFO 'ansible_navigator.setup_logger' New ansible-navigator instance, logging initialized
+2024-11-02T02:09:52.717456+00:00 INFO 'ansible_navigator.setup_logger' New ansible-runner instance, logging initialized
+2024-11-02T02:09:52.717559+00:00 DEBUG 'ansible_navigator.main' Jinja2==3.1.4 
+2024-11-02T02:09:52.717632+00:00 DEBUG 'ansible_navigator.main' MarkupSafe==2.1.5 
+2024-11-02T02:09:52.717726+00:00 DEBUG 'ansible_navigator.main' Parsley==1.3 
+2024-11-02T02:09:52.717800+00:00 DEBUG 'ansible_navigator.main' PySocks==1.7.1 
+2024-11-02T02:09:52.717880+00:00 DEBUG 'ansible_navigator.main' PyYAML==5.4.1 
+2024-11-02T02:09:52.717948+00:00 DEBUG 'ansible_navigator.main' Pygments==2.18.0 
+2024-11-02T02:09:52.718026+00:00 DEBUG 'ansible_navigator.main' ansible-builder==3.0.0 
+2024-11-02T02:09:52.718104+00:00 DEBUG 'ansible_navigator.main' ansible-compat==24.7.0 
+2024-11-02T02:09:52.718182+00:00 DEBUG 'ansible_navigator.main' ansible-core==2.15.12 
+2024-11-02T02:09:52.718256+00:00 DEBUG 'ansible_navigator.main' ansible-lint==6.22.2 
+2024-11-02T02:09:52.718353+00:00 DEBUG 'ansible_navigator.main' ansible-navigator==24.2.0 
+2024-11-02T02:09:52.718434+00:00 DEBUG 'ansible_navigator.main' ansible-runner==2.4.0 
+2024-11-02T02:09:52.718514+00:00 DEBUG 'ansible_navigator.main' attrs==24.2.0 /home/ansible/.local/lib/python3.9/site-packages/attrs/__init__.py
+2024-11-02T02:09:52.718586+00:00 DEBUG 'ansible_navigator.main' bindep==2.11.0 /home/ansible/.local/lib/python3.9/site-packages/bindep/__init__.py
+2024-11-02T02:09:52.718680+00:00 DEBUG 'ansible_navigator.main' black==24.8.0 /home/ansible/.local/lib/python3.9/site-packages/black/__init__.cpython-39-x86_64-linux-gnu.so
+2024-11-02T02:09:52.718765+00:00 DEBUG 'ansible_navigator.main' bracex==2.5 /home/ansible/.local/lib/python3.9/site-packages/bracex/__init__.py
+2024-11-02T02:09:52.718843+00:00 DEBUG 'ansible_navigator.main' cffi==1.17.0 /home/ansible/.local/lib/python3.9/site-packages/cffi/__init__.py
+2024-11-02T02:09:52.718917+00:00 DEBUG 'ansible_navigator.main' chardet==4.0.0 /usr/lib/python3.9/site-packages/chardet/__init__.py
+2024-11-02T02:09:52.718991+00:00 DEBUG 'ansible_navigator.main' click==8.1.7 /home/ansible/.local/lib/python3.9/site-packages/click/__init__.py
+2024-11-02T02:09:52.719073+00:00 DEBUG 'ansible_navigator.main' cockpit==311.2 /usr/lib/python3.9/site-packages/cockpit/__init__.py
+2024-11-02T02:09:52.719133+00:00 DEBUG 'ansible_navigator.main' cryptography==43.0.0 /home/ansible/.local/lib/python3.9/site-packages/cryptography/__init__.py
+2024-11-02T02:09:52.719221+00:00 DEBUG 'ansible_navigator.main' dasbus==1.4 /usr/lib/python3.9/site-packages/dasbus/__init__.py
+2024-11-02T02:09:52.719288+00:00 DEBUG 'ansible_navigator.main' dbus-python==1.2.18 
+2024-11-02T02:09:52.719361+00:00 DEBUG 'ansible_navigator.main' decorator==4.4.2 /usr/lib/python3.9/site-packages/decorator.py
+2024-11-02T02:09:52.719453+00:00 DEBUG 'ansible_navigator.main' distro==1.9.0 /home/ansible/.local/lib/python3.9/site-packages/distro/__init__.py
+2024-11-02T02:09:52.719529+00:00 DEBUG 'ansible_navigator.main' dnspython==2.7.0 
+2024-11-02T02:09:52.719587+00:00 DEBUG 'ansible_navigator.main' docutils==0.21.2 /home/ansible/.local/lib/python3.9/site-packages/docutils/__init__.py
+2024-11-02T02:09:52.719641+00:00 DEBUG 'ansible_navigator.main' file-magic==0.4.0 
+2024-11-02T02:09:52.719747+00:00 DEBUG 'ansible_navigator.main' filelock==3.15.4 /home/ansible/.local/lib/python3.9/site-packages/filelock/__init__.py
+2024-11-02T02:09:52.719809+00:00 DEBUG 'ansible_navigator.main' idna==2.10 /usr/lib/python3.9/site-packages/idna/__init__.py
+2024-11-02T02:09:52.719877+00:00 DEBUG 'ansible_navigator.main' importlib-metadata==6.2.1 
+2024-11-02T02:09:52.719940+00:00 DEBUG 'ansible_navigator.main' importlib-resources==5.0.7 
+2024-11-02T02:09:52.719994+00:00 DEBUG 'ansible_navigator.main' iniparse==0.4 /usr/lib/python3.9/site-packages/iniparse/__init__.py
+2024-11-02T02:09:52.720053+00:00 DEBUG 'ansible_navigator.main' jsonschema-specifications==2023.12.1 
+2024-11-02T02:09:52.720121+00:00 DEBUG 'ansible_navigator.main' jsonschema==4.23.0 /home/ansible/.local/lib/python3.9/site-packages/jsonschema/__init__.py
+2024-11-02T02:09:52.720177+00:00 DEBUG 'ansible_navigator.main' lockfile==0.12.2 /home/ansible/.local/lib/python3.9/site-packages/lockfile/__init__.py
+2024-11-02T02:09:52.720250+00:00 DEBUG 'ansible_navigator.main' lxml==4.6.5 /usr/lib64/python3.9/site-packages/lxml/__init__.py
+2024-11-02T02:09:52.720307+00:00 DEBUG 'ansible_navigator.main' markdown-it-py==3.0.0 
+2024-11-02T02:09:52.720361+00:00 DEBUG 'ansible_navigator.main' mdurl==0.1.2 /home/ansible/.local/lib/python3.9/site-packages/mdurl/__init__.py
+2024-11-02T02:09:52.720417+00:00 DEBUG 'ansible_navigator.main' mypy-extensions==1.0.0 
+2024-11-02T02:09:52.720489+00:00 DEBUG 'ansible_navigator.main' nftables==0.1 /usr/lib/python3.9/site-packages/nftables/__init__.py
+2024-11-02T02:09:52.720545+00:00 DEBUG 'ansible_navigator.main' onigurumacffi==1.3.0 /home/ansible/.local/lib/python3.9/site-packages/onigurumacffi.py
+2024-11-02T02:09:52.720598+00:00 DEBUG 'ansible_navigator.main' packaging==24.1 /home/ansible/.local/lib/python3.9/site-packages/packaging/__init__.py
+2024-11-02T02:09:52.720681+00:00 DEBUG 'ansible_navigator.main' pathspec==0.12.1 /home/ansible/.local/lib/python3.9/site-packages/pathspec/__init__.py
+2024-11-02T02:09:52.720744+00:00 DEBUG 'ansible_navigator.main' pbr==6.0.0 /home/ansible/.local/lib/python3.9/site-packages/pbr/__init__.py
+2024-11-02T02:09:52.720799+00:00 DEBUG 'ansible_navigator.main' perf==0.1 /usr/lib64/python3.9/site-packages/perf.cpython-39-x86_64-linux-gnu.so
+2024-11-02T02:09:52.720873+00:00 DEBUG 'ansible_navigator.main' pip==21.2.3 /usr/lib/python3.9/site-packages/pip/__init__.py
+2024-11-02T02:09:52.720934+00:00 DEBUG 'ansible_navigator.main' platformdirs==4.2.2 /home/ansible/.local/lib/python3.9/site-packages/platformdirs/__init__.py
+2024-11-02T02:09:52.720990+00:00 DEBUG 'ansible_navigator.main' ply==3.11 /usr/lib/python3.9/site-packages/ply/__init__.py
+2024-11-02T02:09:52.721061+00:00 DEBUG 'ansible_navigator.main' psutil==5.8.0 /usr/lib64/python3.9/site-packages/psutil/__init__.py
+2024-11-02T02:09:52.721117+00:00 DEBUG 'ansible_navigator.main' pycairo==1.20.1 
+2024-11-02T02:09:52.721180+00:00 DEBUG 'ansible_navigator.main' pycparser==2.22 /home/ansible/.local/lib/python3.9/site-packages/pycparser/__init__.py
+2024-11-02T02:09:52.721246+00:00 DEBUG 'ansible_navigator.main' pyinotify==0.9.6 /usr/lib/python3.9/site-packages/pyinotify.py
+2024-11-02T02:09:52.721300+00:00 DEBUG 'ansible_navigator.main' pyparsing==2.4.7 /usr/lib/python3.9/site-packages/pyparsing.py
+2024-11-02T02:09:52.721372+00:00 DEBUG 'ansible_navigator.main' python-daemon==3.0.1 
+2024-11-02T02:09:52.721435+00:00 DEBUG 'ansible_navigator.main' python-dateutil==2.8.1 
+2024-11-02T02:09:52.721491+00:00 DEBUG 'ansible_navigator.main' python-linux-procfs==0.7.3 
+2024-11-02T02:09:52.721564+00:00 DEBUG 'ansible_navigator.main' pyudev==0.22.0 /usr/lib/python3.9/site-packages/pyudev/__init__.py
+2024-11-02T02:09:52.721620+00:00 DEBUG 'ansible_navigator.main' referencing==0.35.1 /home/ansible/.local/lib/python3.9/site-packages/referencing/__init__.py
+2024-11-02T02:09:52.721710+00:00 DEBUG 'ansible_navigator.main' requests==2.25.1 /usr/lib/python3.9/site-packages/requests/__init__.py
+2024-11-02T02:09:52.721771+00:00 DEBUG 'ansible_navigator.main' requirements-parser==0.11.0 
+2024-11-02T02:09:52.721827+00:00 DEBUG 'ansible_navigator.main' resolvelib==1.0.1 /home/ansible/.local/lib/python3.9/site-packages/resolvelib/__init__.py
+2024-11-02T02:09:52.721900+00:00 DEBUG 'ansible_navigator.main' rich==13.7.1 /home/ansible/.local/lib/python3.9/site-packages/rich/__init__.py
+2024-11-02T02:09:52.721956+00:00 DEBUG 'ansible_navigator.main' rpds-py==0.20.0 
+2024-11-02T02:09:52.722027+00:00 DEBUG 'ansible_navigator.main' ruamel.yaml.clib==0.2.8 
+2024-11-02T02:09:52.722085+00:00 DEBUG 'ansible_navigator.main' ruamel.yaml==0.18.6 /home/ansible/.local/lib/python3.9/site-packages/ruamel/yaml/__init__.py
+2024-11-02T02:09:52.722145+00:00 DEBUG 'ansible_navigator.main' selinux==3.6 /usr/lib64/python3.9/site-packages/selinux/__init__.py
+2024-11-02T02:09:52.722219+00:00 DEBUG 'ansible_navigator.main' sepolicy==3.6 /usr/lib/python3.9/site-packages/sepolicy/__init__.py
+2024-11-02T02:09:52.722277+00:00 DEBUG 'ansible_navigator.main' setools==4.4.4 /usr/lib64/python3.9/site-packages/setools/__init__.py
+2024-11-02T02:09:52.722338+00:00 DEBUG 'ansible_navigator.main' setroubleshoot==3.3.32 /usr/lib/python3.9/site-packages/setroubleshoot/__init__.py
+2024-11-02T02:09:52.722405+00:00 DEBUG 'ansible_navigator.main' setuptools==72.2.0 /home/ansible/.local/lib/python3.9/site-packages/setuptools/__init__.py
+2024-11-02T02:09:52.722460+00:00 DEBUG 'ansible_navigator.main' six==1.15.0 /usr/lib/python3.9/site-packages/six.py
+2024-11-02T02:09:52.722532+00:00 DEBUG 'ansible_navigator.main' sos==4.7.1 /usr/lib/python3.9/site-packages/sos/__init__.py
+2024-11-02T02:09:52.722591+00:00 DEBUG 'ansible_navigator.main' subprocess-tee==0.4.2 
+2024-11-02T02:09:52.722650+00:00 DEBUG 'ansible_navigator.main' subscription-manager==1.29.40 
+2024-11-02T02:09:52.722759+00:00 DEBUG 'ansible_navigator.main' tomli==2.0.1 /home/ansible/.local/lib/python3.9/site-packages/tomli/__init__.py
+2024-11-02T02:09:52.722834+00:00 DEBUG 'ansible_navigator.main' types-setuptools==75.1.0.20240917 
+2024-11-02T02:09:52.722907+00:00 DEBUG 'ansible_navigator.main' typing_extensions==4.12.2 /home/ansible/.local/lib/python3.9/site-packages/typing_extensions.py
+2024-11-02T02:09:52.722966+00:00 DEBUG 'ansible_navigator.main' tzdata==2024.1 /home/ansible/.local/lib/python3.9/site-packages/tzdata/__init__.py
+2024-11-02T02:09:52.723020+00:00 DEBUG 'ansible_navigator.main' urllib3==1.26.5 /usr/lib/python3.9/site-packages/urllib3/__init__.py
+2024-11-02T02:09:52.723096+00:00 DEBUG 'ansible_navigator.main' wcmatch==9.0 /home/ansible/.local/lib/python3.9/site-packages/wcmatch/__init__.py
+2024-11-02T02:09:52.723152+00:00 DEBUG 'ansible_navigator.main' yamllint==1.35.1 /home/ansible/.local/lib/python3.9/site-packages/yamllint/__init__.py
+2024-11-02T02:09:52.723209+00:00 DEBUG 'ansible_navigator.main' zipp==3.20.0 /home/ansible/.local/lib/python3.9/site-packages/zipp/__init__.py
+2024-11-02T02:09:52.723283+00:00 DEBUG 'ansible_navigator.main' Default collection_doc_cache_path set to: /home/ansible/.cache/ansible-navigator/collection_doc_cache.db
+2024-11-02T02:09:52.723339+00:00 DEBUG 'ansible_navigator.main' EDITOR environment variable not set
+2024-11-02T02:09:52.723399+00:00 DEBUG 'ansible_navigator.main' Default editor_command set to: vi +{line_number} {filename}
+2024-11-02T02:09:52.723466+00:00 DEBUG 'ansible_navigator.main' No config file set by ANSIBLE_NAVIGATOR_CONFIG
+2024-11-02T02:09:52.723522+00:00 DEBUG 'ansible_navigator.main' Looking in /home/ansible
+2024-11-02T02:09:52.723576+00:00 DEBUG 'ansible_navigator.main' Looking for '/home/ansible/.ansible-navigator.yml', '/home/ansible/.ansible-navigator.yaml' and '/home/ansible/.ansible-navigator.json'
+2024-11-02T02:09:52.723650+00:00 DEBUG 'ansible_navigator.main' Found 0: 
+2024-11-02T02:09:52.723727+00:00 DEBUG 'ansible_navigator.main' Looking in /home/ansible/ansible-labs
+2024-11-02T02:09:52.723801+00:00 DEBUG 'ansible_navigator.main' Looking for '/home/ansible/ansible-labs/ansible-navigator.yml', '/home/ansible/ansible-labs/ansible-navigator.yaml' and '/home/ansible/ansible-labs/ansible-navigator.json'
+2024-11-02T02:09:52.723860+00:00 DEBUG 'ansible_navigator.main' Found 0: 
+2024-11-02T02:09:52.723920+00:00 DEBUG 'ansible_navigator.main' All found 0: 
+2024-11-02T02:09:52.723995+00:00 DEBUG 'ansible_navigator.main' Using: None
+2024-11-02T02:09:52.724054+00:00 DEBUG 'ansible_navigator.main' No valid settings file found, using all default values for settings.
+2024-11-02T02:09:52.724125+00:00 DEBUG 'ansible_navigator.main' Command provided: 'collection'
+2024-11-02T02:09:52.724186+00:00 WARNING 'ansible_navigator.main' Configuration errors encountered, rolling back to previous configuration.
+2024-11-02T02:09:52.724241+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_artifact_dir = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.724315+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_rotate_artifacts_count = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.724371+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_timeout = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.724437+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_write_job_events = 'False' (bool/Defaults)
+2024-11-02T02:09:52.724500+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: app = 'welcome' (str/Defaults)
+2024-11-02T02:09:52.724554+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: cmdline = '['collection']' (list/Command line)
+2024-11-02T02:09:52.724616+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: collection_doc_cache_path = '/home/ansible/.cache/ansible-navigator/collection_doc_cache.db' (str/Defaults)
+2024-11-02T02:09:52.724691+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: config = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.724750+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: container_engine = 'auto' (str/Defaults)
+2024-11-02T02:09:52.724822+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: container_options = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.724880+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: display_color = 'True' (bool/Defaults)
+2024-11-02T02:09:52.724933+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: editor_command = 'vi +{line_number} {filename}' (str/Defaults)
+2024-11-02T02:09:52.725006+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: editor_console = 'True' (bool/Defaults)
+2024-11-02T02:09:52.725073+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: enable_prompts = 'False' (bool/Defaults)
+2024-11-02T02:09:52.725156+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: exec_command = '/bin/bash' (str/Defaults)
+2024-11-02T02:09:52.725227+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: exec_shell = 'True' (bool/Defaults)
+2024-11-02T02:09:52.725283+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment = 'True' (bool/Defaults)
+2024-11-02T02:09:52.725357+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment_image = 'ghcr.io/ansible/creator-ee:v0.22.0' (str/Defaults)
+2024-11-02T02:09:52.725428+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment_volume_mounts = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.725484+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: format = 'yaml' (str/Defaults)
+2024-11-02T02:09:52.725540+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_builder = 'False' (bool/Defaults)
+2024-11-02T02:09:52.725610+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_config = 'False' (bool/Defaults)
+2024-11-02T02:09:52.725673+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_doc = 'False' (bool/Defaults)
+2024-11-02T02:09:52.725756+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_inventory = 'False' (bool/Defaults)
+2024-11-02T02:09:52.725826+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_playbook = 'False' (bool/Defaults)
+2024-11-02T02:09:52.725898+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: images_details = '['everything']' (list/Defaults)
+2024-11-02T02:09:52.725958+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: inventory = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.726012+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: inventory_column = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.726087+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: lint_config = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.726173+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: lintables = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.726257+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_append = 'True' (bool/Defaults)
+2024-11-02T02:09:52.726315+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_file = '/home/ansible/ansible-labs/ansible-navigator.log' (str/Defaults)
+2024-11-02T02:09:52.726370+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_level = 'warning' (str/Defaults)
+2024-11-02T02:09:52.726443+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: mode = 'interactive' (str/Defaults)
+2024-11-02T02:09:52.726511+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: osc4 = 'True' (bool/Defaults)
+2024-11-02T02:09:52.726592+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pass_environment_variable = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.726650+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.726738+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_enable = 'True' (bool/Defaults)
+2024-11-02T02:09:52.726809+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_replay = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.726880+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_save_as = '{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json' (str/Defaults)
+2024-11-02T02:09:52.726957+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: plugin_name = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.727014+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: plugin_type = 'module' (str/Defaults)
+2024-11-02T02:09:52.727082+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pull_arguments = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.727165+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pull_policy = 'tag' (str/Defaults)
+2024-11-02T02:09:52.727234+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: set_environment_variable = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.727318+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_effective = 'False' (bool/Defaults)
+2024-11-02T02:09:52.727376+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_sample = 'False' (bool/Defaults)
+2024-11-02T02:09:52.727444+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_schema = 'json' (str/Defaults)
+2024-11-02T02:09:52.727522+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_sources = 'False' (bool/Defaults)
+2024-11-02T02:09:52.727591+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: time_zone = 'UTC' (str/Defaults)
+2024-11-02T02:09:52.727679+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: workdir = '/home/ansible/ansible-labs' (str/Defaults)
+2024-11-02T02:09:52.727740+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_artifact_dir = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.727814+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_rotate_artifacts_count = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.727886+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_timeout = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.727944+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_write_job_events = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728025+00:00 DEBUG 'ansible_navigator.main' After rollback: app = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728089+00:00 DEBUG 'ansible_navigator.main' After rollback: cmdline = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728155+00:00 DEBUG 'ansible_navigator.main' After rollback: collection_doc_cache_path = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728236+00:00 DEBUG 'ansible_navigator.main' After rollback: config = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728295+00:00 DEBUG 'ansible_navigator.main' After rollback: container_engine = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728376+00:00 DEBUG 'ansible_navigator.main' After rollback: container_options = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728442+00:00 DEBUG 'ansible_navigator.main' After rollback: display_color = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728507+00:00 DEBUG 'ansible_navigator.main' After rollback: editor_command = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728586+00:00 DEBUG 'ansible_navigator.main' After rollback: editor_console = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728646+00:00 DEBUG 'ansible_navigator.main' After rollback: enable_prompts = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728740+00:00 DEBUG 'ansible_navigator.main' After rollback: exec_command = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728799+00:00 DEBUG 'ansible_navigator.main' After rollback: exec_shell = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728866+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.728945+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment_image = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729002+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment_volume_mounts = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729074+00:00 DEBUG 'ansible_navigator.main' After rollback: format = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729146+00:00 DEBUG 'ansible_navigator.main' After rollback: help_builder = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729202+00:00 DEBUG 'ansible_navigator.main' After rollback: help_config = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729276+00:00 DEBUG 'ansible_navigator.main' After rollback: help_doc = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729345+00:00 DEBUG 'ansible_navigator.main' After rollback: help_inventory = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729400+00:00 DEBUG 'ansible_navigator.main' After rollback: help_playbook = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729480+00:00 DEBUG 'ansible_navigator.main' After rollback: images_details = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729550+00:00 DEBUG 'ansible_navigator.main' After rollback: inventory = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729604+00:00 DEBUG 'ansible_navigator.main' After rollback: inventory_column = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729719+00:00 DEBUG 'ansible_navigator.main' After rollback: lint_config = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729790+00:00 DEBUG 'ansible_navigator.main' After rollback: lintables = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729835+00:00 DEBUG 'ansible_navigator.main' After rollback: log_append = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729872+00:00 DEBUG 'ansible_navigator.main' After rollback: log_file = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729904+00:00 DEBUG 'ansible_navigator.main' After rollback: log_level = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729942+00:00 DEBUG 'ansible_navigator.main' After rollback: mode = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.729981+00:00 DEBUG 'ansible_navigator.main' After rollback: osc4 = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730020+00:00 DEBUG 'ansible_navigator.main' After rollback: pass_environment_variable = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730058+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730093+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_enable = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730123+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_replay = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730156+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_save_as = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730188+00:00 DEBUG 'ansible_navigator.main' After rollback: plugin_name = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730217+00:00 DEBUG 'ansible_navigator.main' After rollback: plugin_type = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730259+00:00 DEBUG 'ansible_navigator.main' After rollback: pull_arguments = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730298+00:00 DEBUG 'ansible_navigator.main' After rollback: pull_policy = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730331+00:00 DEBUG 'ansible_navigator.main' After rollback: set_environment_variable = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730364+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_effective = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730400+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_sample = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730424+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_schema = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730445+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_sources = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730466+00:00 DEBUG 'ansible_navigator.main' After rollback: time_zone = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730492+00:00 DEBUG 'ansible_navigator.main' After rollback: workdir = 'Not set' (Constants/Not set)
+2024-11-02T02:09:52.730527+00:00 DEBUG 'ansible_navigator.main' Configuration rollback complete.
+2024-11-02T02:09:52.730559+00:00 DEBUG 'ansible_navigator.main' Collection doc cache not mounted
+2024-11-02T02:09:52.730598+00:00 WARNING 'ansible_navigator.main' Issues were found while applying the settings.
+2024-11-02T02:09:52.730640+00:00 INFO 'ansible_navigator.main' Command provided: 'collection'
+2024-11-02T02:09:52.730697+00:00 ERROR 'ansible_navigator.main' argument {subcommand} --help: invalid choice: 'collection' (choose from 'builder', 'collections', 'config', 'doc', 'exec', 'images', 'inventory', 'lint', 'replay', 'run', 'settings', 'welcome')
+2024-11-02T02:09:52.730760+00:00 INFO 'ansible_navigator.main' Configuration failed, using default log file location. (/home/ansible/ansible-labs/ansible-navigator.log) Log level set to debug
+2024-11-02T02:09:52.730825+00:00 INFO 'ansible_navigator.main' Review the hints and log file to see what went wrong.
+2024-11-02T02:12:06.833858+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/compliance/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-02T02:12:06.834143+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/insights_client/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-02T02:12:06.834191+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834229+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834265+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834318+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834353+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834383+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834417+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834452+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834488+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834514+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834545+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834580+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834610+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834636+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834696+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834771+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834806+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834841+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834878+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834918+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834949+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834975+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.834998+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835024+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835047+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835071+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835093+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835116+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835138+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835164+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835188+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835211+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835232+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835256+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835277+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835300+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835324+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835403+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835433+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835461+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835490+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835527+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835567+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-02T02:12:06.835601+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963123+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/compliance/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T01:21:43.963466+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/insights_client/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T01:21:43.963515+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963552+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963594+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963629+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963657+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963704+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963729+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963754+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963781+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963813+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963842+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963875+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963934+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963964+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.963989+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964017+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964040+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964064+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964087+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964113+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964139+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964168+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964193+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964221+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964249+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964274+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964426+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964463+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964492+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964520+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964548+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964573+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964604+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964631+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964657+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964703+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964735+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964764+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964789+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964820+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964859+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964886+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964915+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:21:43.964942+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:14.302906+00:00 WARNING 'ansible_navigator.actions.doc._update_args' Configuration errors encountered, rolling back to previous configuration.
+2024-11-04T01:36:14.303092+00:00 WARNING 'ansible_navigator.actions.doc._update_args' Issues were found while applying the settings.
+2024-11-04T01:36:14.303146+00:00 WARNING 'ansible_navigator.actions.doc._update_args' A plugin name or other parameter is required when using the doc subcommand
+2024-11-04T01:36:22.112978+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/compliance/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T01:36:22.113139+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/insights_client/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T01:36:22.113186+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113221+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113248+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113271+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113294+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113322+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113359+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113386+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113409+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113431+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113457+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113493+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113519+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113541+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113563+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113587+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113617+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113652+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113701+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113725+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113748+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113770+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113791+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113813+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113842+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113873+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113898+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113921+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113944+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113966+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.113988+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.114012+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.114035+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.114056+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.114078+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.114100+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.114121+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.114142+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.114163+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.114185+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.114206+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.114228+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.114251+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:22.114273+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.847829+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/compliance/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T01:36:47.848283+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/insights_client/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T01:36:47.848382+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.848454+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.848552+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.848618+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.848702+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.848775+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.848832+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.848909+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.848967+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849043+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849104+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849160+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849232+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849292+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849360+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849436+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849494+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849560+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849628+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849704+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849785+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849844+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849901+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.849973+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850041+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850125+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850183+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850241+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850313+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850370+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850454+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850515+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850570+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850647+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850727+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850814+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850885+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.850961+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.851020+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.851078+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.851149+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.851219+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.851295+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T01:36:47.851355+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T01:36:50.676858+00:00 WARNING 'ansible_navigator.actions.doc._update_args' Configuration errors encountered, rolling back to previous configuration.
+2024-11-04T01:36:50.677174+00:00 WARNING 'ansible_navigator.actions.doc._update_args' Issues were found while applying the settings.
+2024-11-04T01:36:50.677231+00:00 WARNING 'ansible_navigator.actions.doc._update_args' A plugin name or other parameter is required when using the doc subcommand
+2024-11-04T01:36:55.971675+00:00 ERROR 'ansible_navigator.actions.doc._run_runner' Error occurred while fetching doc for plugin awx: '[WARNING]: awx was not found
+'
+2024-11-04T01:37:07.200024+00:00 ERROR 'ansible_navigator.actions.doc._run_runner' Error occurred while fetching doc for plugin awx.awx: '[WARNING]: awx.awx was not found
+'
+2024-11-04T01:37:16.333553+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/inventory/controller.py', 'type': 'inventory'}
+2024-11-04T01:37:16.333896+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/lookup/controller_api.py', 'type': 'lookup'}
+2024-11-04T01:37:16.334584+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/ad_hoc_command.py', 'type': 'module'}
+2024-11-04T01:37:16.334720+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/ad_hoc_command_cancel.py', 'type': 'module'}
+2024-11-04T01:37:16.334873+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/ad_hoc_command_wait.py', 'type': 'module'}
+2024-11-04T01:37:16.334986+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/application.py', 'type': 'module'}
+2024-11-04T01:37:16.335091+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/bulk_host_create.py', 'type': 'module'}
+2024-11-04T01:37:16.335194+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/bulk_host_delete.py', 'type': 'module'}
+2024-11-04T01:37:16.335447+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/bulk_job_launch.py', 'type': 'module'}
+2024-11-04T01:37:16.335570+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/controller_meta.py', 'type': 'module'}
+2024-11-04T01:37:16.335694+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/credential.py', 'type': 'module'}
+2024-11-04T01:37:16.335804+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/credential_input_source.py', 'type': 'module'}
+2024-11-04T01:37:16.335913+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/credential_type.py', 'type': 'module'}
+2024-11-04T01:37:16.336011+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/execution_environment.py', 'type': 'module'}
+2024-11-04T01:37:16.336102+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/export.py', 'type': 'module'}
+2024-11-04T01:37:16.336194+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/group.py', 'type': 'module'}
+2024-11-04T01:37:16.336292+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/host.py', 'type': 'module'}
+2024-11-04T01:37:16.336393+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/import.py', 'type': 'module'}
+2024-11-04T01:37:16.336496+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/instance.py', 'type': 'module'}
+2024-11-04T01:37:16.336601+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/instance_group.py', 'type': 'module'}
+2024-11-04T01:37:16.336719+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/inventory.py', 'type': 'module'}
+2024-11-04T01:37:16.336826+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/inventory_source.py', 'type': 'module'}
+2024-11-04T01:37:16.336930+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/inventory_source_update.py', 'type': 'module'}
+2024-11-04T01:37:16.337030+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_cancel.py', 'type': 'module'}
+2024-11-04T01:37:16.337135+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_launch.py', 'type': 'module'}
+2024-11-04T01:37:16.337234+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_list.py', 'type': 'module'}
+2024-11-04T01:37:16.337334+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_template.py', 'type': 'module'}
+2024-11-04T01:37:16.337429+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_wait.py', 'type': 'module'}
+2024-11-04T01:37:16.337533+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/label.py', 'type': 'module'}
+2024-11-04T01:37:16.337636+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/license.py', 'type': 'module'}
+2024-11-04T01:37:16.337749+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/notification_template.py', 'type': 'module'}
+2024-11-04T01:37:16.337860+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/organization.py', 'type': 'module'}
+2024-11-04T01:37:16.337958+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/project.py', 'type': 'module'}
+2024-11-04T01:37:16.338055+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/project_update.py', 'type': 'module'}
+2024-11-04T01:37:16.338153+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/role.py', 'type': 'module'}
+2024-11-04T01:37:16.338392+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/schedule.py', 'type': 'module'}
+2024-11-04T01:37:16.338512+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/settings.py', 'type': 'module'}
+2024-11-04T01:37:16.338610+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/subscriptions.py', 'type': 'module'}
+2024-11-04T01:37:16.338724+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/team.py', 'type': 'module'}
+2024-11-04T01:37:16.338829+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/token.py', 'type': 'module'}
+2024-11-04T01:37:16.338930+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/user.py', 'type': 'module'}
+2024-11-04T01:37:16.339030+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_approval.py', 'type': 'module'}
+2024-11-04T01:37:16.339503+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_job_template.py', 'type': 'module'}
+2024-11-04T01:37:16.339762+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_job_template_node.py', 'type': 'module'}
+2024-11-04T01:37:16.339884+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_launch.py', 'type': 'module'}
+2024-11-04T01:37:16.339991+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_node_wait.py', 'type': 'module'}
+2024-11-04T01:40:47.817923+00:00 ERROR 'ansible_navigator.actions.doc._run_runner' Error occurred while fetching doc for plugin awx.awx: '[WARNING]: awx.awx was not found
+'
+2024-11-04T01:41:01.515129+00:00 ERROR 'ansible_navigator.actions.doc._run_runner' Error occurred while fetching doc for plugin ansible.posix.json: '[WARNING]: ansible.posix.json was not found
+'
+2024-11-04T01:41:13.779735+00:00 ERROR 'ansible_navigator.actions.doc._run_runner' Error occurred while fetching doc for plugin json: '[WARNING]: json was not found
+'
+2024-11-04T13:56:39.491196+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/compliance/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T13:56:39.491602+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/insights_client/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T13:56:39.491648+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.491707+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.491741+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.491772+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.491803+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.491833+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.491870+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.491908+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.491933+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.491959+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.491989+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492024+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492059+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492092+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492122+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492149+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492180+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492213+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492254+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492296+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492331+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492359+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492388+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492421+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492459+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492492+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492521+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492553+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492581+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492612+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492637+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492667+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492711+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492745+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492775+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492801+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492833+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492860+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492893+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492925+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492953+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.492982+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.493014+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:56:39.493040+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:56:41.486833+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/inventory/controller.py', 'type': 'inventory'}
+2024-11-04T13:56:41.486969+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/lookup/controller_api.py', 'type': 'lookup'}
+2024-11-04T13:56:41.487117+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/ad_hoc_command.py', 'type': 'module'}
+2024-11-04T13:56:41.487183+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/ad_hoc_command_cancel.py', 'type': 'module'}
+2024-11-04T13:56:41.487239+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/ad_hoc_command_wait.py', 'type': 'module'}
+2024-11-04T13:56:41.487294+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/application.py', 'type': 'module'}
+2024-11-04T13:56:41.487348+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/bulk_host_create.py', 'type': 'module'}
+2024-11-04T13:56:41.487401+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/bulk_host_delete.py', 'type': 'module'}
+2024-11-04T13:56:41.487454+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/bulk_job_launch.py', 'type': 'module'}
+2024-11-04T13:56:41.487505+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/controller_meta.py', 'type': 'module'}
+2024-11-04T13:56:41.487556+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/credential.py', 'type': 'module'}
+2024-11-04T13:56:41.487614+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/credential_input_source.py', 'type': 'module'}
+2024-11-04T13:56:41.487680+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/credential_type.py', 'type': 'module'}
+2024-11-04T13:56:41.487736+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/execution_environment.py', 'type': 'module'}
+2024-11-04T13:56:41.487795+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/export.py', 'type': 'module'}
+2024-11-04T13:56:41.487853+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/group.py', 'type': 'module'}
+2024-11-04T13:56:41.487906+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/host.py', 'type': 'module'}
+2024-11-04T13:56:41.487962+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/import.py', 'type': 'module'}
+2024-11-04T13:56:41.488016+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/instance.py', 'type': 'module'}
+2024-11-04T13:56:41.488068+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/instance_group.py', 'type': 'module'}
+2024-11-04T13:56:41.488119+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/inventory.py', 'type': 'module'}
+2024-11-04T13:56:41.488170+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/inventory_source.py', 'type': 'module'}
+2024-11-04T13:56:41.488219+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/inventory_source_update.py', 'type': 'module'}
+2024-11-04T13:56:41.488278+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_cancel.py', 'type': 'module'}
+2024-11-04T13:56:41.488333+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_launch.py', 'type': 'module'}
+2024-11-04T13:56:41.488388+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_list.py', 'type': 'module'}
+2024-11-04T13:56:41.488444+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_template.py', 'type': 'module'}
+2024-11-04T13:56:41.488495+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_wait.py', 'type': 'module'}
+2024-11-04T13:56:41.488556+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/label.py', 'type': 'module'}
+2024-11-04T13:56:41.488608+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/license.py', 'type': 'module'}
+2024-11-04T13:56:41.488672+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/notification_template.py', 'type': 'module'}
+2024-11-04T13:56:41.488728+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/organization.py', 'type': 'module'}
+2024-11-04T13:56:41.488779+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/project.py', 'type': 'module'}
+2024-11-04T13:56:41.488829+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/project_update.py', 'type': 'module'}
+2024-11-04T13:56:41.488878+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/role.py', 'type': 'module'}
+2024-11-04T13:56:41.488930+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/schedule.py', 'type': 'module'}
+2024-11-04T13:56:41.488980+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/settings.py', 'type': 'module'}
+2024-11-04T13:56:41.489030+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/subscriptions.py', 'type': 'module'}
+2024-11-04T13:56:41.489089+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/team.py', 'type': 'module'}
+2024-11-04T13:56:41.489141+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/token.py', 'type': 'module'}
+2024-11-04T13:56:41.489190+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/user.py', 'type': 'module'}
+2024-11-04T13:56:41.489240+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_approval.py', 'type': 'module'}
+2024-11-04T13:56:41.489297+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_job_template.py', 'type': 'module'}
+2024-11-04T13:56:41.489362+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_job_template_node.py', 'type': 'module'}
+2024-11-04T13:56:41.489419+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_launch.py', 'type': 'module'}
+2024-11-04T13:56:41.489470+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_node_wait.py', 'type': 'module'}
+2024-11-04T13:59:18.384853+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/compliance/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T13:59:18.385030+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/insights_client/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T13:59:18.385075+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385108+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385135+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385161+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385186+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385211+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385237+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385274+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385304+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385329+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385352+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385378+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385416+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385442+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385465+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385495+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385527+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385572+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385597+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385618+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385640+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385674+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385714+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385744+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385783+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385813+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385839+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385864+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385894+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385930+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.385975+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.386019+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.386055+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.386083+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.386137+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.386168+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.386193+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.386218+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.386243+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.386267+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.386298+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.386325+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.386350+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T13:59:18.386376+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T13:59:19.982633+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/inventory/controller.py', 'type': 'inventory'}
+2024-11-04T13:59:19.982824+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/lookup/controller_api.py', 'type': 'lookup'}
+2024-11-04T13:59:19.982992+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/ad_hoc_command.py', 'type': 'module'}
+2024-11-04T13:59:19.983077+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/ad_hoc_command_cancel.py', 'type': 'module'}
+2024-11-04T13:59:19.983156+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/ad_hoc_command_wait.py', 'type': 'module'}
+2024-11-04T13:59:19.983231+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/application.py', 'type': 'module'}
+2024-11-04T13:59:19.983312+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/bulk_host_create.py', 'type': 'module'}
+2024-11-04T13:59:19.983384+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/bulk_host_delete.py', 'type': 'module'}
+2024-11-04T13:59:19.983456+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/bulk_job_launch.py', 'type': 'module'}
+2024-11-04T13:59:19.983532+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/controller_meta.py', 'type': 'module'}
+2024-11-04T13:59:19.983607+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/credential.py', 'type': 'module'}
+2024-11-04T13:59:19.983694+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/credential_input_source.py', 'type': 'module'}
+2024-11-04T13:59:19.983766+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/credential_type.py', 'type': 'module'}
+2024-11-04T13:59:19.983837+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/execution_environment.py', 'type': 'module'}
+2024-11-04T13:59:19.983915+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/export.py', 'type': 'module'}
+2024-11-04T13:59:19.983992+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/group.py', 'type': 'module'}
+2024-11-04T13:59:19.984065+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/host.py', 'type': 'module'}
+2024-11-04T13:59:19.984145+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/import.py', 'type': 'module'}
+2024-11-04T13:59:19.984220+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/instance.py', 'type': 'module'}
+2024-11-04T13:59:19.984288+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/instance_group.py', 'type': 'module'}
+2024-11-04T13:59:19.984354+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/inventory.py', 'type': 'module'}
+2024-11-04T13:59:19.984426+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/inventory_source.py', 'type': 'module'}
+2024-11-04T13:59:19.984504+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/inventory_source_update.py', 'type': 'module'}
+2024-11-04T13:59:19.984579+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_cancel.py', 'type': 'module'}
+2024-11-04T13:59:19.984644+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_launch.py', 'type': 'module'}
+2024-11-04T13:59:19.984740+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_list.py', 'type': 'module'}
+2024-11-04T13:59:19.984818+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_template.py', 'type': 'module'}
+2024-11-04T13:59:19.984895+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/job_wait.py', 'type': 'module'}
+2024-11-04T13:59:19.984976+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/label.py', 'type': 'module'}
+2024-11-04T13:59:19.985057+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/license.py', 'type': 'module'}
+2024-11-04T13:59:19.985138+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/notification_template.py', 'type': 'module'}
+2024-11-04T13:59:19.985204+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/organization.py', 'type': 'module'}
+2024-11-04T13:59:19.985286+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/project.py', 'type': 'module'}
+2024-11-04T13:59:19.985360+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/project_update.py', 'type': 'module'}
+2024-11-04T13:59:19.985438+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/role.py', 'type': 'module'}
+2024-11-04T13:59:19.985517+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/schedule.py', 'type': 'module'}
+2024-11-04T13:59:19.985592+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/settings.py', 'type': 'module'}
+2024-11-04T13:59:19.985675+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/subscriptions.py', 'type': 'module'}
+2024-11-04T13:59:19.985747+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/team.py', 'type': 'module'}
+2024-11-04T13:59:19.985828+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/token.py', 'type': 'module'}
+2024-11-04T13:59:19.985901+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/user.py', 'type': 'module'}
+2024-11-04T13:59:19.985964+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_approval.py', 'type': 'module'}
+2024-11-04T13:59:19.986043+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_job_template.py', 'type': 'module'}
+2024-11-04T13:59:19.986128+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_job_template_node.py', 'type': 'module'}
+2024-11-04T13:59:19.986208+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_launch.py', 'type': 'module'}
+2024-11-04T13:59:19.986299+00:00 ERROR 'ansible_navigator.actions.collections._build_collection_content_menu' error loading plugin doc {'path': 'plugins/modules/workflow_node_wait.py', 'type': 'module'}
+2024-11-04T14:01:21.637051+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/compliance/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T14:01:21.637203+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/insights_client/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T14:01:21.637252+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637291+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637332+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637372+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637411+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637451+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637495+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637547+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637591+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637637+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637697+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637745+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637787+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637839+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637889+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.637936+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638001+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638049+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638092+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638139+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638181+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638237+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638291+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638340+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638378+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638419+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638459+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638500+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638541+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638587+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638633+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638692+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638742+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638789+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638832+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638879+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638920+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.638966+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.639016+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.639110+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.639159+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.639203+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.639247+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:21.639298+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.961905+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/compliance/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T14:01:52.962099+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/insights_client/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2024-11-04T14:01:52.962155+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962202+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962246+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962291+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962336+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962377+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962421+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962465+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962514+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962560+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962604+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962649+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962710+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962754+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962798+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962842+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962887+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962923+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.962967+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963000+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963026+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963049+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963073+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963095+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963132+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963167+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963190+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963214+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/locations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963236+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963259+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963288+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963328+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963363+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963407+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963430+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963452+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963483+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963517+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963541+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963567+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963591+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963615+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963642+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2024-11-04T14:01:52.963696+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/main.yml Failed to find main.yml for role in theforeman.foreman.

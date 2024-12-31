@@ -1,0 +1,5 @@
+---
+# tasks file for hellomsg
+- name print hello world
+  ansible.builtin.debug:
+    msg: "Hello World"
